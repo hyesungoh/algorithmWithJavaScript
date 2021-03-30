@@ -82,7 +82,7 @@ const theBiggestInt = 9007199254740991n;
 const alsoHuge = BigInt(9007199254740991);
 ```
 
--   ### For loop
+-   #### For loop
 
 ```js
 // basic for
@@ -100,6 +100,34 @@ for (let i in arr) {
 for (let i of arr) {
     console.log(i);
 } // logs 3, 5, 7
+```
+
+-   #### Array to String
+
+```js
+const elements = ["hi", "cat", "dog"];
+
+// 요소를 나타내는 문자열
+console.log(elements.toString()); // "hi,cat,dog"
+
+// 모든 요소를 연결
+console.log(elements.join()); // "hi,cat,dog"
+
+console.log(elements.join("")); // "hicatdog"
+
+console.log(elements.join("-")); // "hi-cat-dog"
+```
+
+-   #### Insert, Delete by Index
+
+```js
+const arr = [1, 3, 4, 5];
+// splice(index, deleteCount, items...)
+arr.splice(1, 0, 2);
+console.log(arr); // [1, 2, 3, 4, 5]
+
+arr.splice(3, 1);
+console.log(arr); // [1, 2, 3, 5]
 ```
 
 ---
@@ -129,3 +157,7 @@ for (let i of arr) {
 -   #### [BOJ 10546](../master/BOJ/BOJ_10546.js)
 
     프로그래머스 완주하지 못한 선수와 같은 문제. 오브젝트 자료형을 이용하여 참가한 선수의 이름을 기준으로 정수형 값으로 저장한 후, 완주한 사람에 대해서 -1 하였다. 그 후 모든 오브젝트 요소에 대해서 값이 1인 요소를 출력하여 풀었다.
+
+- #### [BOJ 5397](../master/BOJ/BOJ_5397.js)
+
+    
