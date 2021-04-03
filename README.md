@@ -9,7 +9,7 @@
 ```js
 const input = require("fs")
     .readFileSync("/dev/stdin")
-    .toString()
+    .toString()s
     .trim()
     .split("\n");
 
@@ -128,6 +128,16 @@ console.log(arr); // [1, 2, 3, 4, 5]
 
 arr.splice(3, 1);
 console.log(arr); // [1, 2, 3, 5]
+```
+
+-   #### Array containing 0..N
+
+```js
+Array.from(Array(5).keys());
+// [0, 1, 2, 3, 4]
+
+[...Array(5).keys()];
+// [0, 1, 2, 3, 4]
 ```
 
 ---
