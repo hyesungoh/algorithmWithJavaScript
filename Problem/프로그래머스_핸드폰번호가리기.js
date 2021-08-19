@@ -7,5 +7,3 @@
 
 const solution = (pN) =>
     [...pN].map((n, i) => (i > pN.length - 5 ? n : "*")).join("");
-
-solution("123412341234");
