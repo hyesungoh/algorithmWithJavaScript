@@ -11,5 +11,3 @@ const solution = (n) =>
             .sort((a, b) => b - a)
             .join("")
     );
-
-console.log(solution(312412));
