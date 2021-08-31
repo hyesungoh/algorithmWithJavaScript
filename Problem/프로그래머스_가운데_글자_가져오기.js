@@ -5,6 +5,3 @@ const solution = (s) => {
         ? s.slice(half - 1, half + 1)
         : s.slice(half, half + 1);
 };
-
-console.log(solution("abcde"));
-console.log(solution("abcd"));
