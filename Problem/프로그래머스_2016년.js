@@ -5,5 +5,3 @@ const solution = (m, d) => {
     const curDow = (curDay % words.length) - 1;
     return curDow === -1 ? "THU" : words[curDow];
 };
-
-console.log(solution(1, 7));
