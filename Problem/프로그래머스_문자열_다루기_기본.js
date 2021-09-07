@@ -9,7 +9,3 @@ const solution = (s) => {
     if (s == parseInt(s)) return true;
     return false;
 }
-
-
-console.log(solution("1234"));
-console.log(solution("1e10"));
