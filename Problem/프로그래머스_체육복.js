@@ -18,5 +18,3 @@ function solution(n, lost, reserve) {
 
     return cloths.slice(1).filter((i) => i > 0).length;
 }
-
-solution(5, [2, 4], [1, 3, 5]);
