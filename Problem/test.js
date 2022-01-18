@@ -1,14 +1,17 @@
-function solution(clothes) {
-  const graph = {};
-  for (let cloth of clothes) {
-    const [_, category] = cloth;
-    if (category in graph) graph[category] += 1;
-    else graph[category] = 1;
+function solution(people, limit) {
+  let answer = 0;
+
+  people.sort((a, b) => a - b);
+  let start = 0;
+  let end = people.length - 1;
+
+  while (start <= end) {
+    ++answer;
+    if (people[start] + people[end] <= limit) ++start;
+    --end;
   }
 
-  let answer = 1;
-  for (let key in graph) {
-    answer *= graph[key] + 1;
-  }
-  return answer - 1;
+  return answer;
 }
+
+console.log(solution([70, 80, 50], 100));
