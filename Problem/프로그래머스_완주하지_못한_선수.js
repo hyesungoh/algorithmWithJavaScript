@@ -27,7 +27,3 @@ function solution(participant, completion) {
     completionObj[participantPerson] -= 1;
   }
 }
-
-console.log(
-  solution(["mislav", "stanko", "mislav", "ana"], ["stanko", "ana", "mislav"])
-);
