@@ -20,11 +20,3 @@ function solution(tickets) {
   DFS("ICN", tickets, []);
   return answer.sort()[0];
 }
-
-console.log(
-  solution([
-    ["ICN", "JFK"],
-    ["HND", "IAD"],
-    ["JFK", "HND"],
-  ])
-);
