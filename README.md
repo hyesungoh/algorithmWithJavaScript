@@ -40,7 +40,7 @@ const [n, m, v] = input[0].split(" ").map(Number);
 ```js
 const oneDimension = Array(size).fill(false);
 
-const twoDimension = Array.from(Array(size), () => Array(size).fill(false));
+const twoDimension = Array.from(Array(ySize), () => Array(xSize).fill(false));
 ```
 
 - #### sort without compareFunction
@@ -404,3 +404,9 @@ Array.from(Array(5).keys());
 - [프로그래머스 여행경로](../master/Problem/프로그래머스_여행경로.js)
 
   항공권 정보가 담긴 2차원 배열을 이용해 모든 공항을 방문하면서 알파벳 순서가 앞서는 경로를 출력하는 문제. 재귀적으로 현재 위치, 남은 티켓들, 현재까지 온 경로들을 이용해 출발할 수 있는 경로들로부터 호출하여 풀었다.
+
+#### 22.5.12
+
+- [프로그래머스 9251](../master/Problem/BOJ_9251.js)
+
+  두 단어의 LCS를 구하는 문제. DP를 이용하여 풀었다. 자세한 풀이는 파이썬 풀이 참고
